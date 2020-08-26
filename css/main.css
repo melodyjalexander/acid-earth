@@ -1,82 +1,191 @@
-* {
-  box-sizing: border-box;
+/* Authentic Untitled */
+@font-face {
+  font-family: "authentic-untitled";
+  src: url("../authentic_untitled_trial-webfont.woff2") format("woff2"),
+    url("../css/fonts/authentic_untitled_trial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Authentic Sans 60 */
+@font-face {
+  font-family: "authentic-sans-60";
+  src: url("../css/fonts/authentic-sans-60.woff2") format("woff2"),
+    url("../css/fonts/authentic-sans-60.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Authentic Sans 90 */
+@font-face {
+  font-family: "authentic-sans-90";
+  src: url("../css/fonts/authentic-sans-90.woff2") format("woff2"),
+    url("../css/fonts/authentic-sans-90.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Authentic Sans 130 */
+@font-face {
+  font-family: "authentic-sans-130";
+  src: url("../css/fonts/authentic-sans-130.woff2") format("woff2"),
+    url("../css/fonts/authentic-sans-130.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Authentic Sans 150 */
+@font-face {
+  font-family: "authentic-sans-150";
+  src: url("../css/fonts/authentic-sans-150.woff2") format("woff2"),
+    url("../css/fonts/authentic-sans-150.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "authentic-sans-130", serif;
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 7.594em;
+}
+
+h3 {
+  font-size: 3.375em;
+}
+
+h4 {
+  font-size: 2.25em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+small,
+.text_small {
+  font-size: 0.667em;
 }
 
 body {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-
-  text-align: left;
-  font-size: 1.2em;
-  line-height: 1.5em;
-
-  color: #000000; /*Black */
-  background-color: #e7e7e7; /* White */
-
   margin: 0;
+  color: #333;
+  font-family: "authentic-sans-90", "helvetica", "sans serif";
 }
 
-.section-title {
-  margin: auto;
-  padding: 10px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-
-  text-align: center;
-}
-
-.about-block {
-  width: 100%;
-  height: 500px;
-  padding: 70px;
+main {
+  padding: 40px;
+  max-width: 1160px;
   margin: 0 auto;
+  display: block;
+}
+
+.headline {
+  margin-top: 30px;
+}
+
+.big-type {
+  text-align: center;
+  font-family: "authentic-sans-130", serif;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 7.594em;
 }
 
 .about {
-  width: 50%;
-  float: left;
-  padding: 0px 40px;
-}
-
-.right {
-  float: right;
-  width: 40%;
-  margin: auto;
-}
-
-.button {
-  border: 2px solid black;
-  color: black;
-  padding: 20px;
-  font-size: 1.2em;
-  border-radius: 8px;
-  text-decoration: none;
-
-  width: 250px;
-  display: inline-block;
-  text-align: center;
-
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 
-link {
-  text-decoration: inherit;
-  font-weight: lighter;
-  color: white;
+.about p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 2em;
 }
 
-.about-block:after {
-  content: "";
-  clear: both;
-  display: table;
+.container {
+  background-color: FFFBFB;
 }
 
-.lake-list {
+.inline-button {
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid #333;
+  border-radius: 60px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: content-box;
+}
+
+.inline-button:visited {
+  color: #333;
+}
+
+#me:hover {
+  background-color: greenyellow;
+}
+
+#this-one:hover {
+  background-color: lightpink;
+}
+
+#this-two:hover {
+  background-color: rgb(0, 217, 255);
+}
+
+#hi:hover {
+  background-color: salmon;
+}
+
+.eyebrow {
   margin: 0;
-  width: 100%;
-  padding: initial;
+  font-family: "authentic-sans-130";
+  font-size: 0.667em;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.eye {
+  margin-top: 0;
+  font-family: "authentic-sans-130";
+  font-size: 2.25em;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.lake {
+  margin: 0;
+  font-family: "authentic-sans-130";
+  font-size: 2.25em;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .lake-image {
@@ -87,36 +196,4 @@ link {
 .lake-image-right {
   width: 50%;
   float: right;
-}
-
-.lake-info {
-  width: 50%;
-  float: right;
-  text-align: center;
-}
-
-.lake-info-left {
-  width: 50%;
-  float: left;
-  text-align: center;
-}
-
-ul,
-li {
-  margin: initial;
-  padding: initial;
-  display: block;
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
-  box-sizing: border-box;
-}
-
-.lake-list:after {
-  content: "";
-  clear: both;
-  display: table;
 }
