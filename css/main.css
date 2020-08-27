@@ -53,7 +53,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "authentic-sans-130", serif;
+  font-family: "authentic-sans-130", sans-serif;
   font-weight: normal;
 }
 
@@ -80,6 +80,7 @@ small,
 }
 
 body {
+  font-size: 16px;
   margin: 0;
   color: #333;
   font-family: "authentic-sans-90", "helvetica", "sans serif";
@@ -106,13 +107,13 @@ main {
 
 .about {
   margin-top: 100px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 
 .about p {
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  width: 75%;
+  margin: 0 auto;
 
   font-size: 1.5em;
   text-align: center;
@@ -140,7 +141,7 @@ main {
 }
 
 #me:hover {
-  background-color: greenyellow;
+  background-color: rgb(163, 255, 24);
 }
 
 #this-one:hover {
@@ -155,45 +156,74 @@ main {
   background-color: salmon;
 }
 
-.eyebrow {
-  margin: 0;
-  font-family: "authentic-sans-130";
-  font-size: 0.667em;
-  padding-top: 20px;
-  border-top: 1px solid #333;
+.circle {
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(163, 255, 24);
+  border-radius: 50%;
 }
 
-.eye {
-  margin-top: 0;
-  font-family: "authentic-sans-130";
-  font-size: 2.25em;
+.tiny-text {
+  margin-top: 100px;
+  font-size: 14px;
+  font-family: "authentic-sans-130", sans-serif;
   text-align: left;
-  border-bottom: 1px solid #333;
 }
 
-.lake {
-  margin: 0;
-  font-family: "authentic-sans-130";
-  font-size: 2.25em;
+.subject {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3.375em;
+  font-family: "authentic-sans-130", sans-serif;
   text-align: left;
-  border-bottom: 1px solid #333;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  list-style-type: none;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  padding: 0;
 }
 
-.lake-image {
-  width: 50%;
-  float: left;
+.list-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightslategray;
 }
 
-.lake-image-right {
-  width: 50%;
-  float: right;
+.first {
+  border-top: 1px solid lightslategray;
+}
+
+.list-container p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.5em;
+  font-family: "authentic-sans-130";
+  line-height: 2;
+}
+
+.list-container a {
+  text-decoration: none;
+  color: #333;
+}
+
+a {
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2334e7ff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
