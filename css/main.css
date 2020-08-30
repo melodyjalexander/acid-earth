@@ -81,7 +81,7 @@ small,
 
 body {
   font-size: 16px;
-  margin: 0;
+  margin: 0 auto;
   color: #333;
   font-family: "authentic-sans-90", "helvetica", "sans serif";
 }
@@ -90,7 +90,6 @@ main {
   padding: 40px;
   max-width: 1160px;
   margin: 0 auto;
-  display: block;
 }
 
 .headline {
@@ -121,7 +120,7 @@ main {
 }
 
 .container {
-  background-color: FFFBFB;
+  background-color: FFFBFB; /* White */
 }
 
 .inline-button {
@@ -129,7 +128,7 @@ main {
   padding-inline-end: 30px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border: 2px solid #333;
+  border: 2px solid #333; /* Black */
   border-radius: 60px;
   text-align: center;
   text-decoration: none;
@@ -153,7 +152,7 @@ main {
 }
 
 #hi:hover {
-  background-color: salmon;
+  background-color: lightpink;
 }
 
 .circle {
@@ -207,7 +206,7 @@ ul {
   color: #333;
 }
 
-a {
+.direct {
   background: linear-gradient(
     to bottom,
     var(--mainColor) 0%,
@@ -220,10 +219,75 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.direct:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2334e7ff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 4px;
   background-repeat: repeat-x;
   text-decoration: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 40px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.post-date {
+  text-align: center;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.post-title {
+  width: 100%;
+  margin: 50px auto;
+
+  text-decoration: none;
+  text-align: center;
+}
+
+.post-title:visited {
+  color: initial;
+}
+
+.post-title:hover {
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+.big-image {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.navi-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon-left {
+  float: left;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+.icon-right {
+  float: right;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+.navi-container:after {
+  content: "";
+  clear: both;
+  display: table;
 }
