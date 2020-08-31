@@ -336,9 +336,49 @@ main {
   background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/6000/6470/deathvalley_l7_2000193.jpg);
   background-position: center;
   background-size: cover;
-  color: transparent;);
+  color: transparent;
 }
 
 .two {
-  
+  background-color: rosybrown;
+}
+
+.two:hover {
+  background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/145000/145216/botswanasaltpan_oli_201809.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.three {
+  background-color: lightskyblue;
+}
+
+.three:hover {
+  background-image: url(https://cdn.shortpixel.ai/spai/w_1259+q_lossy+ret_img+to_webp/https://sofiaadventures.com/wp-content/uploads/2020/02/shutterstock_1429356797.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.four {
+  background-color: lightgoldenrodyellow;
+}
+
+.four:hover {
+  background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/49000/49864/tassilinajjer_etm_2000.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.five {
+  background-color: lightseagreen;
+}
+
+.five:hover {
+  background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/146000/146697/bahamas_etm_2001017.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
 }
