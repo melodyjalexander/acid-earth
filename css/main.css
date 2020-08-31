@@ -291,3 +291,54 @@ main {
   clear: both;
   display: table;
 }
+
+.post-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: rgb(223, 244, 181);
+}
+
+.post p {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.post:hover {
+  background-image: url(https://mybestplace.com/uploads/2020/04/Devils-Bath-New-Zealand-COVER.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
+.one {
+  background-color: thistle;
+}
+
+.one:hover {
+  background-image: url(https://eoimages.gsfc.nasa.gov/images/imagerecords/6000/6470/deathvalley_l7_2000193.jpg);
+  background-position: center;
+  background-size: cover;
+  color: transparent;);
+}
+
+.two {
+  
+}
