@@ -48,42 +48,19 @@ p {
   margin-bottom: 1.15rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "authentic-sans-130", sans-serif;
-  font-weight: normal;
-}
-
 h1 {
   margin-top: 0;
   font-size: 7.594em;
 }
 
-h3 {
-  font-size: 3.375em;
-}
-
-h4 {
-  font-size: 2.25em;
-}
-
-h5 {
-  font-size: 1.5em;
-}
-
-small,
-.text_small {
-  font-size: 0.667em;
-}
-
 body {
   font-size: 16px;
-  margin: 0 auto;
   color: #333;
   font-family: "authentic-sans-90", "helvetica", "sans serif";
+
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 main {
@@ -91,6 +68,8 @@ main {
   max-width: 1160px;
   margin: 0 auto;
 }
+
+/* About Page */
 
 .headline {
   margin-top: 30px;
@@ -154,6 +133,8 @@ main {
 #hi:hover {
   background-color: lightpink;
 }
+
+/* Sources Page */
 
 .circle {
   margin: 0 auto;
@@ -227,17 +208,7 @@ ul {
   text-decoration: none;
 }
 
-body {
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-main {
-  padding: 40px;
-  max-width: 1160px;
-  margin: 0 auto;
-}
+/*Blog Post page */
 
 .post-date {
   text-align: center;
@@ -291,6 +262,8 @@ main {
   clear: both;
   display: table;
 }
+
+/* Article list */
 
 .post-container {
   padding-top: 50px;
