@@ -355,3 +355,131 @@ ul {
   background-size: cover;
   color: transparent;
 }
+
+/* ------------Contact------------- */
+
+.contact-page {
+  background: rgb(223, 229, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(223, 229, 255, 1) 0%,
+    rgba(246, 183, 120, 1) 21%,
+    rgba(243, 225, 255, 1) 70%,
+    rgba(255, 189, 202, 1) 100%
+  );
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 40px auto;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.contact-header > h1 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-family: "authentic-sans-60", "helvetica", sans-serif;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "authentic-sans-60", "helvetica", sans-serif;
+  padding: 20px;
+}
+
+.form-row button {
+  padding: 20px 40px;
+  width: 250px;
+  margin: 10px auto;
+  border: 1px solid #333;
+  border-radius: 8px;
+
+  background-color: lightpink;
+
+  font-size: 16px;
+  font-size: 16px;
+  font-family: "authentic-sans-60", "helvetica", sans-serif;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  margin: 10px auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    min-width: 768px;
+    height: 1000px;
+    margin: 10px auto;
+  }
+
+  .contact-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    min-width: 800px;
+    margin: 20px auto;
+  }
+
+  .contact-image {
+    width: 100%;
+    max-height: 80%;
+    display: flex;
+    margin-right: 50px;
+    justify-content: left;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+  }
+}
