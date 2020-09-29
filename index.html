@@ -7,137 +7,132 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <meta name="description" content="Kenzie" />
     <meta name="author" content="Kenzie" />
     <meta name="keywords" content="Kenzie" />
-
-    <!-- Title Page-->
     <title>ACID EARTH</title>
-
-    <!-- CSS-->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>"
+    />
     <link href="/css/main.css" rel="stylesheet" media="all" />
   </head>
 
-  <body>
-    <main>
-      <div class="container">
-        <header class="headline">
-          <h1 class="big-type">This must be the place.</h1>
-        </header>
+  <body id='home'>
+    <header>
+      <nav class='header'>
+        <a href="#home" class='logo'>Acid Earth</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-        <section class="about">
-          <p>
-            Acid Earth is a blog by
-            <a
-              class="inline-button"
-              id="me"
-              href="https://www.instagram.com/m___e___l___o/?hl=en"
-              target="_blank"
-              >me</a
-            >, a designer + developer. I’m deeply inspired by the bold,
-            psychedelic images produced from natural phenomena around the world.
-            As I've started to organize my reference library, I've taken a
-            unique interest in organizing and cataloging the the images I've
-            referenced for many years. Like what you see?
-            <a
-              class="inline-button"
-              id="hi"
-              href="mailto: hello@acid.earth"
-              target="_blank"
-              >Say hi &#9786;</a
-            >
-          </p>
-        </section>
+      <ul class='menu'>
+        <li class='menu-item'><a href='#about'>About</a></li>
+        <li class='menu-item'><a href='#contact'>Contact</a></li>
+        <li class='menu-item'><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="intro-about">
+      <div class="intro">
+        <img
+          class="intro-image"
+          src="images/pink-lagoon-small.jpg"
+          srcset="
+            images/pink-lagoon-large.jpg 2000w,
+            images/pink-lagoon-small.jpg 1000w
+          "
+          sizes="(min-width: 481px) 481px 100vw,
+        "
+        />
       </div>
 
-      <div class="circle"></div>
-
-      <div class="container">
-        <header>
-          <h1 class="tiny-text">3 MILLION TABS LATER</h1>
-          <h2 class="subject">(Some) Sources</h2>
+      <section  class="about">
+        <header class="about-title">
+          <h2>About</h2>
         </header>
+        <p>
+          Acid Earth is a collection of bold, psychedelic images documenting
+          natural phenomena and unique landscapes from around the world. While
+          these images can be inspirational and awe-inspiring, they are also a
+          powerful reminder of the irreverseable effects of a rapidly warming
+          planet.
+        </p>
+      </section>
+    </div>
 
-        <section class="sources">
+    <div class="intro-ref">
+      <div class="intro ref">
+        <img class="intro-image" src="images/lake-sambhar.jpg" />
+      </div>
+
+      <section class="references">
+        <header class="ref-title">
+          <h2>References</h2>
+        </header>
+        <p>
+          This site utilizes images from public domain collections from around
+          the internet. Here are a few collections worth browsing.
+        </p>
+
+        <div class="ref-list">
           <ul>
-            <div class="list-container first">
-              <li class="list-item">
-                <p>
-                  <span class="tiny-text"
-                    >HUGE LIBRARY OF RECENTLY FEATURED IMAGES</span
-                  ><br />
-                  <a
-                    class="direct"
-                    href="https://www.nasa.gov/topics/earth/images/index.html"
-                    target="_blank"
-                    >NASA:Image Galleries</a
-                  >
-                </p>
+            <div class="ref-item">
+              <li>
+                <a
+                  class="ref-link"
+                  href="https://www.nasa.gov/topics/earth/images/index.html"
+                  target="_blank"
+                  >01. NASA: Image Galleries
+                  <img
+                    class="arrow-right"
+                    src="/images/arrow-right.svg"
+                    alt="right facing arrow"
+                  />
+                </a>
               </li>
             </div>
 
-            <div class="list-container">
-              <li class="list-item">
-                <p>
-                  <span class="tiny-text"
-                    >CATALOG OF EARTH IMAGES UTILIZING TAGS & FILTERS</span
-                  ><br />
-                  <a class="direct" href="https://visibleearth.nasa.gov/"
-                    >NASA:Visible Earth</a
-                  >
-                </p>
+            <div class="ref-item">
+              <li>
+                <a class="ref-link" href="https://visibleearth.nasa.gov/"
+                  >02. NASA: Visible Earth
+                  <img
+                    class="arrow-right"
+                    src="/images/arrow-right.svg"
+                    alt="right facing arrow"
+                /></a>
               </li>
             </div>
 
-            <div class="list-container">
-              <li class="list-item">
-                <p>
-                  <span class="tiny-text"
-                    >VERY WELL CURATED COLLECTION OF PUBLIC DOMAIN ART, ESSAYS,
-                    PHOTOS, ETC.</span
-                  ><br />
-                  <a class="direct" href="https://publicdomainreview.org/"
-                    >The Public Domain Review</a
-                  >
-                </p>
+            <div class="ref-item">
+              <li>
+                <a class="ref-link" href="https://publicdomainreview.org/"
+                  >03. The Public Domain Review
+                  <img
+                    class="arrow-right"
+                    src="/images/arrow-right.svg"
+                    alt="right facing arrow"
+                  />
+                </a>
               </li>
             </div>
 
-            <div class="list-container">
-              <li class="list-item">
-                <p>
-                  <span class="tiny-text"
-                    >PRO TIP: USE THE TAGS TO EXPLORE, THE SEARCH IS
-                    LACKING</span
-                  ><br />
-                  <a
-                    class="direct"
-                    href="https://www.wallpaperflare.com/search?wallpaper=mineral+pools"
-                    >Wallpaper Flares</a
-                  >
-                </p>
-              </li>
-            </div>
-
-            <div class="list-container">
-              <li class="list-item">
-                <p>
-                  <span class="tiny-text"
-                    >A DIRECTORY OF PUBLIC DOMAIN COLLECTIONS AVAILABLE
-                    ONLINE</span
-                  ><br />
-                  <a
-                    class="direct"
-                    href="https://blogs.ntu.edu.sg/openimagecollections/"
-                    >Open Images Collections</a
-                  >
-                </p>
+            <div class="ref-item">
+              <li>
+                <a
+                  class="ref-link"
+                  href="https://blogs.ntu.edu.sg/openimagecollections/"
+                  >04. Open Images Collections
+                  <img
+                    class="arrow-right"
+                    src="/images/arrow-right.svg"
+                    alt="right facing arrow"
+                /></a>
               </li>
             </div>
           </ul>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

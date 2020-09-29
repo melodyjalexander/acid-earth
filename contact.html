@@ -17,15 +17,27 @@
   </head>
 </html>
 
-<body class="contact-page">
-  <main class="contact-container">
-    <div class="circle"></div>
+<body id='contact'>
+  <nav class='header'>
+    <a href="home" class='logo'>Acid Earth</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-    <header class="contact-header">
-      <h1>Say Hello</h1>
-    </header>
+  <ul class='menu'>
+    <li class='menu-item'><a href='#about'>About</a></li>
+    <li class='menu-item'><a href='#contact'>Contact</a></li>
+    <li class='menu-item'><a href="#blog">Blog</a></li>
+  </ul>
+</nav>
 
-    <div class="contact-mobile">
+  <section class="form-container">
+
+    <div class="contact-image">
+      <img class="contact-image" 
+            src="images/tassil-n-ajjer.jpg"
+            alt='arial shot of tassil n&apos; national park'/>
+    </div>
+
       <form
         class="contact-form"
         action="https://formspree.io/xeqpjljq"
@@ -67,17 +79,15 @@
               type="checkbox"
               value="will-recieve"
             />
+
             <span>Send me monthly updates from Acid Earth</span>
           </label>
         </div>
 
         <div class="form-row">
           <button>Submit</button>
-        </div>
+        </div>  
       </form>
-      <div class="contact-image">
-        <img class="contact-image" src="/images/twinkle.png" />
-      </div>
-    </div>
+  </section>
   </main>
 </body>
